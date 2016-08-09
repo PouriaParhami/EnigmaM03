@@ -101,7 +101,7 @@
                         android:layout_height="wrap_content"
                         android:layout_span="6"
                         android:gravity="center"
-                        android:text="پلاگ بورد"
+                        android:text="Plug Bord"
                         android:textSize="20dp"
                         android:textStyle="bold"
                         android:typeface="serif" />
@@ -512,21 +512,21 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="startEnigma"
-                android:text="شروع" />
+                android:text="start" />
 
             <Button
                 android:id="@+id/btnRestart"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="restartEnigma"
-                android:text="راه اندازی مجدد" />
+                android:text="restart" />
 
             <Button
                 android:id="@+id/restPlugbord"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="restartPlugbord"
-                android:text="ریست پلاگ برد" />
+                android:text="restart PlugBord" />
         </LinearLayout>
 
     </LinearLayout>
