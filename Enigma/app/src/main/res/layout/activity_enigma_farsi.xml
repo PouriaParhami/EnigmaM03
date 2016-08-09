@@ -1,0 +1,579 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.redfirelab.pouria.enigma.EnigmaFarsiActivity">
+    <!-- GridLayout For PlugBord -->
+    <!-- English Part Of Plug Bord -->
+
+    <!-- LinerLayout For Text Input And Out Put -->
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/showTextFarsi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:onClick="choseSender"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+        </ScrollView>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/enterTextFarsi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textNoSuggestions|textVisiblePassword" />
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:padding="13dp"
+            android:orientation="horizontal">
+
+            <NumberPicker
+                android:id="@+id/numPickFarsiL"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp" />
+
+            <NumberPicker
+                android:id="@+id/numPickFarrsiM"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp" />
+
+            <NumberPicker
+                android:id="@+id/numPickFarsiR"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp" />
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_marginTop="20dp">
+
+            <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/plugBordTabelFarsi"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:shrinkColumns="*"
+                android:stretchColumns="*">
+
+                <TableRow
+                    android:id="@+id/tableRow1Farsi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/txtPlugBordTite"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_span="6"
+                        android:gravity="center"
+                        android:text="پلاگ بورد"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:typeface="serif" />
+                </TableRow>
+                <!--Row Text View's-->
+                <TableRow
+                    android:id="@+id/tableRow2Farsi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <!-- Text View Alef -->
+                    <TextView
+                        android:id="@+id/txtAlef"
+                        android:gravity="center_horizontal"
+                        android:text="ا"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                    <!-- Text View Be -->
+                    <TextView
+                        android:id="@+id/txtBe"
+                        android:gravity="center_horizontal"
+                        android:text="ب"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                    <!-- Text View Pe -->
+                    <TextView
+                        android:id="@+id/txtPe"
+                        android:gravity="center_horizontal"
+                        android:text="پ"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                    <!-- Text View Te -->
+                    <TextView
+                        android:id="@+id/txtTe"
+                        android:gravity="center_horizontal"
+                        android:text="ت"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                    <!-- Text View Cee -->
+                    <TextView
+                        android:id="@+id/txtCee"
+                        android:gravity="center_horizontal"
+                        android:text="ث"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                    <!-- Text View Jim -->
+                    <TextView
+                        android:id="@+id/txtJim"
+                        android:gravity="center_horizontal"
+                        android:text="ج"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                </TableRow>
+
+                <!--Row Edit Texts's-->
+                <TableRow
+                    android:id="@+id/tableRow3Farsi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <!-- Edite Text Alef -->
+                    <EditText
+                        android:id="@+id/etAlef"
+                        android:gravity="center_horizontal"
+                        android:maxLength="1" />
+                    <!-- Edite Text Be-->
+                    <EditText
+                        android:id="@+id/etBe"
+                        android:gravity="center_horizontal"
+                        android:maxLength="1" />
+                    <!-- Edite Text Pe-->
+                    <EditText
+                        android:id="@+id/etPe"
+                        android:gravity="center_horizontal"
+                        android:maxLength="1" />
+                    <!-- Edite Text Te-->
+                    <EditText
+                        android:id="@+id/etTe"
+                        android:gravity="center_horizontal"
+                        android:maxLength="1" />
+                    <!-- Edite Text Cee-->
+                    <EditText
+                        android:id="@+id/etCee"
+                        android:gravity="center_horizontal"
+                        android:maxLength="1" />
+                    <!-- Edite Text Jim-->
+                    <EditText
+                        android:id="@+id/etJim"
+                        android:gravity="center_horizontal"
+                        android:maxLength="1" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow4Farsi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <!-- Text View Che -->
+                    <TextView
+                        android:id="@+id/txtChe"
+                        android:gravity="center_horizontal"
+                        android:text="چ"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                    <!-- Text View He -->
+                    <TextView
+                        android:id="@+id/txtHe"
+                        android:gravity="center_horizontal"
+                        android:text="ح"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                    <!-- Text View KHe -->
+                    <TextView
+                        android:id="@+id/txtkhe"
+                        android:gravity="center_horizontal"
+                        android:text="خ"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                    <!-- Text View Dal -->
+                    <TextView
+                        android:id="@+id/txtDal"
+                        android:gravity="center_horizontal"
+                        android:text="د"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                    <!-- Text View Zal -->
+                    <TextView
+                        android:id="@+id/txtZal"
+                        android:gravity="center_horizontal"
+                        android:text="ذ"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                    <!-- Text View Re -->
+                    <TextView
+                        android:id="@+id/txtRe"
+                        android:gravity="center_horizontal"
+                        android:text="ر"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow5Farsi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <!-- Edite Text Che -->
+                    <EditText
+                        android:id="@+id/etChe"
+                        android:gravity="center_horizontal"
+                        android:maxLength="1" />
+                    <!-- Edite Text He -->
+                    <EditText
+                        android:id="@+id/etHe"
+                        android:gravity="center_horizontal"
+                        android:maxLength="1" />
+                    <!-- Edite Text KHe -->
+                    <EditText
+                        android:id="@+id/etkhe"
+                        android:gravity="center_horizontal"
+                        android:maxLength="1" />
+                    <!-- Edite Text Dal -->
+                    <EditText
+                        android:id="@+id/etDal"
+                        android:gravity="center_horizontal"
+                        android:maxLength="1" />
+                    <!-- Edite Text Zal -->
+                    <EditText
+                        android:id="@+id/etZal"
+                        android:gravity="center_horizontal"
+                        android:maxLength="1" />
+                    <!-- Edite Text Re -->
+                    <EditText
+                        android:id="@+id/etRe"
+                        android:gravity="center_horizontal"
+                        android:maxLength="1" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow6Farsi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <!-- Text View Ze -->
+                    <TextView
+                        android:id="@+id/txtZe"
+                        android:gravity="center_horizontal"
+                        android:text="ز"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                    <!-- Text View Zhe -->
+                    <TextView
+                        android:id="@+id/txtZhe"
+                        android:gravity="center_horizontal"
+                        android:text="ژ"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                    <!-- Text View Cin -->
+                    <TextView
+                        android:id="@+id/txtCin"
+                        android:gravity="center_horizontal"
+                        android:text="س"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                    <!-- Text View Shin -->
+                    <TextView
+                        android:id="@+id/txtShin"
+                        android:gravity="center_horizontal"
+                        android:text="ش"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                    <!-- Text View Sad -->
+                    <TextView
+                        android:id="@+id/txtSad"
+                        android:gravity="center_horizontal"
+                        android:text="ص"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                    <!-- Text View Zat -->
+                    <TextView
+                        android:id="@+id/txtZat"
+                        android:gravity="center_horizontal"
+                        android:text="ض"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow7Farsi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <!-- Edite Text Re -->
+                    <EditText
+                        android:id="@+id/etZe"
+                        android:gravity="center_horizontal"
+                        android:maxLength="1" />
+                    <!-- Edite Text Zhe -->
+                    <EditText
+                        android:id="@+id/etZhe"
+                        android:gravity="center_horizontal"
+                        android:maxLength="1" />
+                    <!-- Edite Text Cin -->
+                    <EditText
+                        android:id="@+id/etCin"
+                        android:gravity="center_horizontal"
+                        android:maxLength="1" />
+                    <!-- Edite Text Shin -->
+                    <EditText
+                        android:id="@+id/etShin"
+                        android:gravity="center_horizontal"
+                        android:maxLength="1" />
+                    <!-- Edite Text Sad -->
+
+                    <EditText
+                        android:id="@+id/etSad"
+                        android:gravity="center_horizontal"
+                        android:maxLength="1" />
+                    <!-- Edite Text Zat -->
+                    <EditText
+                        android:id="@+id/etZat"
+                        android:gravity="center_horizontal"
+                        android:maxLength="1" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow8Farsi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <!-- Text View Ta -->
+                    <TextView
+                        android:id="@+id/txtTa"
+                        android:gravity="center_horizontal"
+                        android:text="ط"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                    <!-- Text View Za -->
+                    <TextView
+                        android:id="@+id/txtZa"
+                        android:gravity="center_horizontal"
+                        android:text="ظ"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                    <!-- Text View Ayen -->
+                    <TextView
+                        android:id="@+id/txtAyen"
+                        android:gravity="center_horizontal"
+                        android:text="ع"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                    <!-- Text View Ghayen -->
+                    <TextView
+                        android:id="@+id/txtGhayen"
+                        android:gravity="center_horizontal"
+                        android:text="غ"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                    <!-- Text View Fe-->
+                    <TextView
+                        android:id="@+id/txtFe"
+                        android:gravity="center_horizontal"
+                        android:text="ف"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                    <!-- Text View Ghaf-->
+                    <TextView
+                        android:id="@+id/txtGhaf"
+                        android:gravity="center_horizontal"
+                        android:text="ق"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow9Farsi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <!-- Edite Text Ta -->
+                    <EditText
+                        android:id="@+id/etTa"
+                        android:gravity="center_horizontal"
+                        android:maxLength="1" />
+                    <!-- Edite Text Za -->
+                    <EditText
+                        android:id="@+id/etZa"
+                        android:gravity="center_horizontal"
+                        android:maxLength="1" />
+                    <!-- Edite Text Ayen -->
+                    <EditText
+                        android:id="@+id/etAyen"
+                        android:gravity="center_horizontal"
+                        android:maxLength="1" />
+                    <!-- Edite Text Ghayen -->
+                    <EditText
+                        android:id="@+id/etGhayen"
+                        android:gravity="center_horizontal"
+                        android:maxLength="1" />
+                    <!-- Edite Text Fe-->
+                    <EditText
+                        android:id="@+id/etFe"
+                        android:gravity="center_horizontal"
+                        android:maxLength="1" />
+                    <!-- Edite Text Ghaf-->
+                    <EditText
+                        android:id="@+id/etGhaf"
+                        android:gravity="center_horizontal"
+                        android:maxLength="1" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow10Farsi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <!--  Text Kaf-->
+                    <TextView
+                        android:id="@+id/txtKaf"
+                        android:gravity="center_horizontal"
+                        android:text="ک"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                    <!--  Text Gaf-->
+                    <TextView
+                        android:id="@+id/txtGaf"
+                        android:gravity="center_horizontal"
+                        android:text="گ"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                    <!--  Text Lam-->
+                    <TextView
+                        android:id="@+id/txtLam"
+                        android:gravity="center_horizontal"
+                        android:text="ل"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                    <!--  Text Mim-->
+                    <TextView
+                        android:id="@+id/txtMim"
+                        android:gravity="center_horizontal"
+                        android:text="م"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                    <!--  Text Nun-->
+                    <TextView
+                        android:id="@+id/txtNun"
+                        android:gravity="center_horizontal"
+                        android:text="ن"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                    <!--  Text Vav-->
+                    <TextView
+                        android:id="@+id/txtVav"
+                        android:gravity="center_horizontal"
+                        android:text="و"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow11Farsi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <!--  Text Kaf-->
+                    <EditText
+                        android:id="@+id/etKaf"
+                        android:gravity="center_horizontal"
+                        android:maxLength="1" />
+                    <!--  Text gaf-->
+                    <EditText
+                        android:id="@+id/etGaf"
+                        android:gravity="center_horizontal"
+                        android:maxLength="1" />
+                    <!--  Text Lam-->
+                    <EditText
+                        android:id="@+id/etLam"
+                        android:gravity="center_horizontal"
+                        android:maxLength="1" />
+                    <!--  Text Mim-->
+                    <EditText
+                        android:id="@+id/etMim"
+                        android:gravity="center_horizontal"
+                        android:maxLength="1" />
+                    <!--  Text Nun-->
+                    <EditText
+                        android:id="@+id/etNun"
+                        android:gravity="center_horizontal"
+                        android:maxLength="1" />
+                    <!--  Text Vav-->
+                    <EditText
+                        android:id="@+id/etVav"
+                        android:gravity="center_horizontal"
+                        android:maxLength="1" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow12Farsi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <!--  Text Hee-->
+                    <TextView
+                        android:id="@+id/txtHee"
+                        android:gravity="center_horizontal"
+                        android:text="ه"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                    <!--  Text Ye-->
+                    <TextView
+                        android:id="@+id/txtYe"
+                        android:gravity="center_horizontal"
+                        android:text="ی"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow13Farsi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <!--  Text hee-->
+                    <EditText
+                        android:id="@+id/etHee"
+                        android:gravity="center_horizontal"
+                        android:maxLength="1" />
+                    <!--  Text Ye-->
+                    <EditText
+                        android:id="@+id/etYe"
+                        android:gravity="center_horizontal"
+                        android:maxLength="1" />
+
+                </TableRow>
+
+            </TableLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnStartFarsi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="startEnigmaFarsi"
+                android:text="شروع" />
+
+            <Button
+                android:id="@+id/btnRestartFarsi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="restartEnigmaFarsi"
+                android:text="راه اندازی مجدد" />
+
+            <Button
+                android:id="@+id/restPlugbordFarsi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="restartPlugbordFarsi"
+                android:text="ریست پلاگ برد" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Enigma</string>
+    <string name="coding_textview">صفحه نمایش</string>
+    <string name="plug_bord_a">A</string>
+    <string name="plug_bord_b">B</string>
+    <string name="plug_bord_c">C</string>
+    <string name="plug_bord_d">D</string>
+    <string name="plug_bord_e">E</string>
+    <string name="plug_bord_f">F</string>
+    <string name="plug_bord_g">G</string>
+    <string name="plug_bord_h">H</string>
+    <string name="plug_bord_i">I</string>
+    <string name="plug_bord_j">J</string>
+    <string name="plug_bord_k">K</string>
+    <string name="plug_bord_l">L</string>
+    <string name="plug_bord_m">M</string>
+    <string name="plug_bord_n">N</string>
+    <string name="plug_bord_o">O</string>
+    <string name="plug_bord_p">P</string>
+    <string name="plug_bord_q">Q</string>
+    <string name="plug_bord_r">R</string>
+    <string name="plug_bord_s">S</string>
+    <string name="plug_bord_t">T</string>
+    <string name="plug_bord_u">U</string>
+    <string name="plug_bord_v">V</string>
+    <string name="plug_bord_w">W</string>
+    <string name="plug_bord_x">X</string>
+    <string name="plug_bord_y">Y</string>
+    <string name="plug_bord_z">Z</string>
+</resources>

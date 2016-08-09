@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.redfirelab.pouria.enigma.TutorialActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="برای استفاده ابتدا پلاگ برد را تنظیم کنید ،
+زیر هر حرف حرف دیگری بگذارید ، برای مثال : زیر A , M قرار دهید
+دقت کنید که حرف ها تکراری وارد نشود
+سپس چرخ دنده های بالای پلاگ برد را تنظیم کنید
+به این شکل که هر کدام را روی یک عدد قرار دهید ، می توانید آن ها را 0 نیز بگذارید
+سپس دکمه شروع را بزندید
+در بالای صفحه کادری برای تایپ وجود دارد متن مورد نظر خود را وارد کنید
+لظفا از پاک کردن حروف خود داری کنید
+
+برای رمز گشایی شما باید تنظیمات پلاگ برد و چرخ دنده هارا بدانید
+دکمه شروع مجدد را بزنید ، اگر پلاگ برد هم نیاز به تنظیم مجدد دارد ریست پلاگ برد را بزنید
+
+تنظیمات را انجام دهید ، مانند قبل دکمه شروع را بزنید و شروع به تایپ کنید رمز باز خواهد شد.
+برای اعداد می توانید حروف خواسی را برای عدد صفر تا نه در نظر بگیرید مانند کاری که ارتش آلمان انجام
+میداده است
+
+برای تنظیم پلاگ برد بهتر است از حروف بالا به حروف پایین بیایید تا حرفی را جا نیندازید."
+            android:padding="15dp"/>
+
+    </ScrollView>
+
+</RelativeLayout>

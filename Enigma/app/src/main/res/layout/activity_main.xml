@@ -1,0 +1,535 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+    <!-- GridLayout For PlugBord -->
+    <!-- English Part Of Plug Bord -->
+
+
+    <!-- LinerLayout For Text Input And Out Put -->
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/showText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:onClick="choseEnglishSender"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+        </ScrollView>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/enterText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textNoSuggestions|textVisiblePassword" />
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal">
+
+            <NumberPicker
+                android:id="@+id/numPickL"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp" />
+
+            <NumberPicker
+                android:id="@+id/numPickM"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp" />
+
+            <NumberPicker
+                android:id="@+id/numPickR"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp" />
+
+        </LinearLayout>
+
+
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_marginTop="20dp">
+
+            <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/plugBordTabel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:shrinkColumns="*"
+                android:stretchColumns="*"
+               >
+
+                <TableRow
+                    android:id="@+id/tableRow1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/txtPlugBordTite"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_span="6"
+                        android:gravity="center"
+                        android:text="پلاگ بورد"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:typeface="serif" />
+                </TableRow>
+                <!--Row Text View's-->
+                <TableRow
+                    android:id="@+id/tableRow2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <!-- A  -->
+                    <TextView
+                        android:id="@+id/txtA"
+                        android:gravity="center_horizontal"
+                        android:text="@string/plug_bord_a"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <!-- B -->
+                    <TextView
+                        android:id="@+id/txtB"
+                        android:gravity="center_horizontal"
+                        android:text="@string/plug_bord_b"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <!-- C -->
+                    <TextView
+                        android:id="@+id/txtC"
+                        android:gravity="center_horizontal"
+                        android:text="@string/plug_bord_c"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                    <!-- D -->
+                    <TextView
+                        android:id="@+id/txtD"
+                        android:gravity="center_horizontal"
+                        android:text="@string/plug_bord_d"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <!-- E -->
+                    <TextView
+                        android:id="@+id/txtE"
+                        android:gravity="center_horizontal"
+                        android:text="@string/plug_bord_e"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <!-- F -->
+                    <TextView
+                        android:id="@+id/txtF"
+                        android:gravity="center_horizontal"
+                        android:text="@string/plug_bord_f"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                </TableRow>
+
+                <!--Row Edit Texts's-->
+                <TableRow
+                    android:id="@+id/tableRow3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/etA"
+                        android:gravity="center_horizontal"
+                        android:maxLength="1" />
+
+                    <EditText
+                        android:id="@+id/etB"
+                        android:gravity="center_horizontal"
+                        android:maxLength="1" />
+                    <EditText
+                        android:id="@+id/etC"
+                        android:gravity="center_horizontal"
+                        android:maxLength="1" />
+
+                    <EditText
+                        android:id="@+id/etD"
+                        android:gravity="center_horizontal"
+                        android:maxLength="1" />
+
+                    <EditText
+                        android:id="@+id/etE"
+                        android:gravity="center_horizontal"
+                        android:maxLength="1" />
+
+                    <EditText
+                        android:id="@+id/etF"
+                        android:gravity="center_horizontal"
+                        android:maxLength="1" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <!-- G -->
+                    <TextView
+                        android:id="@+id/txtG"
+                        android:gravity="center_horizontal"
+                        android:text="@string/plug_bord_g"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <!-- H -->
+                    <TextView
+                        android:id="@+id/txtH"
+                        android:gravity="center_horizontal"
+                        android:text="@string/plug_bord_h"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <!-- I -->
+                    <TextView
+                        android:id="@+id/txtI"
+                        android:gravity="center_horizontal"
+                        android:text="@string/plug_bord_i"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <!-- J -->
+                    <TextView
+                        android:id="@+id/txtJ"
+                        android:gravity="center_horizontal"
+                        android:text="@string/plug_bord_j"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                    <!-- K -->
+                    <TextView
+                        android:id="@+id/txtK"
+                        android:gravity="center_horizontal"
+                        android:text="@string/plug_bord_k"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:id="@+id/txtL"
+                        android:gravity="center_horizontal"
+                        android:text="@string/plug_bord_l"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/etG"
+                        android:gravity="center_horizontal"
+                        android:maxLength="1" />
+
+                    <EditText
+                        android:id="@+id/etH"
+                        android:gravity="center_horizontal"
+                        android:maxLength="1" />
+
+
+                    <EditText
+                        android:id="@+id/etI"
+                        android:gravity="center_horizontal"
+                        android:maxLength="1" />
+
+
+                    <EditText
+                        android:id="@+id/etJ"
+                        android:gravity="center_horizontal"
+                        android:maxLength="1" />
+
+
+
+                    <EditText
+                        android:id="@+id/etK"
+                        android:gravity="center_horizontal"
+                        android:maxLength="1" />
+
+
+
+                    <EditText
+                        android:id="@+id/etL"
+                        android:gravity="center_horizontal"
+                        android:maxLength="1" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <!-- M -->
+                    <TextView
+                        android:id="@+id/txtM"
+                        android:gravity="center_horizontal"
+                        android:text="@string/plug_bord_m"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                    <!-- N -->
+                    <TextView
+                        android:id="@+id/txtN"
+                        android:gravity="center_horizontal"
+                        android:text="@string/plug_bord_n"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                    <!-- O -->
+                    <TextView
+                        android:id="@+id/txtO"
+                        android:gravity="center_horizontal"
+                        android:text="@string/plug_bord_o"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                    <!-- P  -->
+                    <TextView
+                        android:id="@+id/txtP"
+                        android:gravity="center_horizontal"
+                        android:text="@string/plug_bord_p"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                    <!-- Q -->
+                    <TextView
+                        android:id="@+id/txtQ"
+                        android:gravity="center_horizontal"
+                        android:text="@string/plug_bord_q"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                    <!-- R -->
+                    <TextView
+                        android:id="@+id/txtR"
+                        android:gravity="center_horizontal"
+                        android:text="@string/plug_bord_r"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/etM"
+                        android:gravity="center_horizontal"
+                        android:maxLength="1" />
+
+
+                    <EditText
+                        android:id="@+id/etN"
+                        android:gravity="center_horizontal"
+                        android:maxLength="1" />
+
+
+                    <EditText
+                        android:id="@+id/etO"
+                        android:gravity="center_horizontal"
+                        android:maxLength="1" />
+
+
+
+                    <EditText
+                        android:id="@+id/etP"
+                        android:gravity="center_horizontal"
+                        android:maxLength="1" />
+
+
+                    <EditText
+                        android:id="@+id/etQ"
+                        android:gravity="center_horizontal"
+                        android:maxLength="1" />
+
+
+                    <EditText
+                        android:id="@+id/etR"
+                        android:gravity="center_horizontal"
+                        android:maxLength="1" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <!-- S -->
+                    <TextView
+                        android:id="@+id/txtS"
+                        android:gravity="center_horizontal"
+                        android:text="@string/plug_bord_s"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <!-- T -->
+                    <TextView
+                        android:id="@+id/txtT"
+                        android:gravity="center_horizontal"
+                        android:text="@string/plug_bord_t"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <!-- U -->
+                    <TextView
+                        android:id="@+id/txtU"
+                        android:gravity="center_horizontal"
+                        android:text="@string/plug_bord_u"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <!-- V -->
+                    <TextView
+                        android:id="@+id/txtV"
+                        android:gravity="center_horizontal"
+                        android:text="@string/plug_bord_v"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <!-- W -->
+                    <TextView
+                        android:id="@+id/txtW"
+                        android:gravity="center_horizontal"
+                        android:text="@string/plug_bord_w"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <!-- X -->
+                    <TextView
+                        android:id="@+id/txtX"
+                        android:gravity="center_horizontal"
+                        android:text="@string/plug_bord_x"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/etS"
+                        android:gravity="center_horizontal"
+                        android:maxLength="1" />
+
+
+                    <EditText
+                        android:id="@+id/etT"
+                        android:gravity="center_horizontal"
+                        android:maxLength="1" />
+
+
+
+                    <EditText
+                        android:id="@+id/etU"
+                        android:gravity="center_horizontal"
+                        android:maxLength="1" />
+
+
+                    <EditText
+                        android:id="@+id/etV"
+                        android:gravity="center_horizontal"
+                        android:maxLength="1" />
+
+
+                    <EditText
+                        android:id="@+id/etW"
+                        android:gravity="center_horizontal"
+                        android:maxLength="1" />
+
+
+                    <EditText
+                        android:id="@+id/etX"
+                        android:gravity="center_horizontal"
+                        android:maxLength="1" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <!-- Y -->
+                    <TextView
+                        android:id="@+id/txtY"
+                        android:gravity="center_horizontal"
+                        android:text="@string/plug_bord_y"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <!-- Z -->
+                    <TextView
+                        android:id="@+id/txtZ"
+                        android:gravity="center_horizontal"
+                        android:text="@string/plug_bord_z"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/etY"
+                        android:gravity="center_horizontal"
+                        android:maxLength="1" />
+
+
+                    <EditText
+                        android:id="@+id/etZ"
+                        android:gravity="center_horizontal"
+                        android:maxLength="1" />
+
+                </TableRow>
+
+
+            </TableLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnStart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="startEnigma"
+                android:text="شروع" />
+
+            <Button
+                android:id="@+id/btnRestart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="restartEnigma"
+                android:text="راه اندازی مجدد" />
+
+            <Button
+                android:id="@+id/restPlugbord"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="restartPlugbord"
+                android:text="ریست پلاگ برد" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
+

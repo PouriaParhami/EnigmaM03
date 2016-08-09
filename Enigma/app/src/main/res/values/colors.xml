@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4DB6AC</color>
+    <color name="colorPrimaryDark">#009688</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="plugbordTextColor">#66ff40</color>
+    <color name="numberPickBackgrounf">#B2DFDB</color>
+    <color name="black">#b0ccf2</color>
+    <color name="solidColorOfNumberPick">#009688</color>
+    <color name="backgroundApp">#80CBC4</color>
+    <color name="backgroundPlugbord">#B2DFDB</color>
+</resources>
